@@ -2,7 +2,7 @@ clear all
 close all
 
 %call transform data beforehanda
-datastore_file = fullfile(pwd, "/raw_data")
+datastore_file = fullfile(pwd, "/training_data")
 imds = imageDatastore(datastore_file, ...
     'IncludeSubfolders',true,'LabelSource','foldernames');
 

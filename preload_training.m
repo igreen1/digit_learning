@@ -2,6 +2,10 @@
 
 mkdir( strcat(pwd, "/training_data"))
 
+for ii = 0:9
+    mkdir( strcat(pwd, "/training_data/", num2str(ii)))
+end
+
 addpath((strcat(pwd, "/img_and_labels")))
 addpath(strcat(pwd, "/training_data"))
 %load images and labels
